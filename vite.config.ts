@@ -1,6 +1,16 @@
-import { defineConfig } from 'vite'
-import react from '@vitejs/plugin-react'
+import { defineConfig } from "@lovable.dev/vite-tanstack-config";
+
+const base = process.env.BASE_PATH || "/";
 
 export default defineConfig({
-  plugins: [react()],
-})
+  tanstackStart: {
+    prerender: {
+      enabled: true,
+      routes: ["/"],
+    },
+  },
+  nitro: false,
+  vite: {
+    base,
+  },
+});
