@@ -1,0 +1,7 @@
+- Keep the single public page in the index route with browser-only interactions and no server data dependencies, so its HTML can be prerendered for static hosting.
+- Keep visual styling in the global semantic design system and use the shared Button variants for controls, so the page remains consistently themed.
+- Bundle optimized PDF-derived WebP imagery locally for standalone GitHub Pages deployment.
+- Keep commercial values in a browser-safe service-terms module with concrete tests, so the displayed offer remains verifiable.
+- Use an environment-configured hosting base path in both Vite and TanStack Router; GitHub Actions deploys only the prerendered client output.
+- Render legal content in a shared accessible browser-only modal from extracted run-level JSON, with the original document bundled under the hosting base path for a byte-identical standalone download.
+- Use a shared IntersectionObserver hook for viewport-entry motion, keeping prerendered content visible by default and honoring reduced-motion preferences so static hosting stays accessible.
